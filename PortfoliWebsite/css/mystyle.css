@@ -1,0 +1,38 @@
+body{
+    background: #ccc;
+    background-image: url('../assets/pic.webp');
+    background-size: 100%;
+    background-repeat:no-repeat;
+}
+#header a:hover
+{
+    color:#fff;
+}
+
+#skills span{
+    padding:10px 20px 10px 20px;
+}
+
+#skills hr{
+    border-width: 3px;
+    margin-top: 7px;
+}
+
+#contact span{
+    padding:10px 20px 10px 20px;
+}
+
+#contact hr{
+    border-width: 3px;
+    margin-top: 7px;
+}
+
+#education span{
+    padding:10px 20px 10px 20px;
+}
+
+#education hr{
+    border-width: 3px;
+    margin-top: 7px;
+}
+
