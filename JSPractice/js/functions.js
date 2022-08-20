@@ -50,3 +50,34 @@ animal.eat.call(human,5,'oranges');//nayan is eating 5 oranges
 
 //apply() method uses argument as array
 animal.eat.apply(human,[6,'mangoes']);//nayan is eating 6 mangoes
+
+//bind() which returns the function which we can use it later
+let human_eat= animal.eat.bind(human);
+human_eat(10,"apples");//nayan is eating 10 apples
+
+//this keyword refering to the property of current object
+
+var humann={
+    name:'nayan',
+    obj(){
+        console.log(this);
+    }
+};
+humann.obj();//{name: 'nayan', obj: ƒ}
+
+//higher order function: which pass function as argument or return function as argument
+//setInterval is an higher order function
+
+/*setInterval(display,1000);//the display function will execute for every 1 sec
+clearInterval(1);//stops*/
+
+//returning function as argument
+function age_req(r_age){
+return function(age){
+    return age>=r_age;
+};
+};
+
+console.log(age_req(18)(20));//true
+console.log(age_req(16)(20));//true
+console.log(age_req(21)(20));//false
